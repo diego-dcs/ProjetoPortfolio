@@ -31,8 +31,9 @@ nav#menu ul  {
   list-style-type: none;
   display: flex;
   gap: 10px;
+  padding-right: 10px;
 }
-nav#menu a   {
+nav#menu a  {
   color: var(--texto-inverso);
   text-decoration: none;
   font-weight: 600;
@@ -43,6 +44,13 @@ nav#menu a   {
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
+}
+nav#menu path  {
+  fill: var(--texto-inverso);
+  transition: fill  0.5s;
+}
+nav#menu path:hover {
+  fill: var(--destaque);
 }
 main  {
   background-color: white;
