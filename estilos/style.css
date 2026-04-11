@@ -27,29 +27,29 @@ header  {
   display: flex;
   place-content: center flex-end;
 }
-nav#menu ul  {
+#menu ul  {
   list-style-type: none;
   display: flex;
   gap: 10px;
   padding-right: 10px;
 }
-nav#menu a  {
-  color: var(--texto-inverso);
+#menu a {
+  color: var(--texto-inverso); */
   text-decoration: none;
   font-weight: 600;
   padding: 12px 15px;
   border-radius: 5px;
   transition: background-color 0.5s;
 }
-nav#menu a:hover {
+#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
-nav#menu path  {
+#menu path  {
   fill: var(--texto-inverso);
   transition: fill  0.5s;
 }
-nav#menu path:hover {
+#menu path:hover {
   fill: var(--destaque);
 }
 main  {
@@ -82,7 +82,7 @@ section#ficha h1  {
   font-size: 1.5em;
   text-align: left;
 }
-div#social {
+#social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,10 +90,17 @@ div#social {
   gap: 1em;
   margin: 15px;
 }
-div#social {a {
+#social a {
   color: var(--destaque);
-  transition: color 0.2s
-}
-div#social {a;hover {
+  transition: fill 0.2s;
+} 
+#social a:hover {
   color: var(--destaque-inverso);
+}
+#social path {
+  fill: var(--destaque);
+  transition: fill 0.2s;
+}
+#social path:hover {
+  fill: var(--destaque-inverso);
 }
