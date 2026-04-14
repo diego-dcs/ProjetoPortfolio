@@ -25,15 +25,14 @@ header  {
   padding: 10px;
 
   display: flex;
-  place-content: center flex-end;
+  place-content: center end;
 }
 #menu ul  {
   list-style-type: none;
   display: flex;
   gap: 10px;
-  padding-right: 10px;
 }
-#menu svg{
+/* #menu a {
   color: var(--texto-inverso);
   text-decoration: none;
   font-weight: 600;
@@ -41,15 +40,18 @@ header  {
   border-radius: 5px;
   transition: background-color 0.5s;
 }
-#menu svg:hover {
+#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
-}
-#menu path { /* SVG */
+} */
+#menu svg {
+  height: 1.6em;
   fill: var(--texto-inverso);
   transition: fill 0.5s;
 }
-
+#menu svg:hover {
+  fill: var(--destaque-inverso);
+}
 main  {
   display: grid;
   grid-template-columns: auto 90% auto;
@@ -90,18 +92,18 @@ section#ficha h1  {
   gap: 1em;
   margin: 15px;
 }
-#social a {
+/* #social a {
   color: var(--destaque);
   transition: fill 0.2s;
 } 
 #social a:hover {
   color: var(--destaque-inverso);
-}
-#social path { /* SVG */
+} */
+#social svg { /* SVG */
   fill: var(--destaque);
   transition: fill 0.2s;
 }
-#social path:hover {
+#social svg:hover {
   fill: var(--destaque-inverso);
 }
 
