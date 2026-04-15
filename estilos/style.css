@@ -116,6 +116,10 @@ article {
   padding: 20px;
   border-radius: 8px;
 }
+article svg {
+  width: 0.85em;
+  fill: var(--destaque);
+}
 article h2 {
   color: var(--destaque);
   margin-top: 10px;
@@ -135,4 +139,40 @@ article h2 {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+
+/* SKILL */
+#skill-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+#skill-conteiner .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#skill-conteiner .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+#skill-conteiner .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+#skill-conteiner .barra {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--fundo-principal);
+}
+#skill-conteiner .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+ }
+ @media screen and (min-width: 768px) {
+  #skill-conteiner {
+    grid-template-columns: 1fr 1fr;
+  }
 }
