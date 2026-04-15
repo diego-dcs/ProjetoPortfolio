@@ -25,7 +25,7 @@ header  {
   padding: 10px;
 
   display: flex;
-  place-content: center end;
+  place-content: end end;
 }
 #menu ul  {
   list-style-type: none;
@@ -46,10 +46,11 @@ header  {
 } */
 #menu svg {
   height: 1.6em;
+  width: 1.6em;
   fill: var(--texto-inverso);
   transition: fill 0.5s;
 }
-#menu svg:hover {
+#menu svg:hover, svg:visited {
   fill: var(--destaque-inverso);
 }
 main  {
@@ -117,8 +118,8 @@ article {
   border-radius: 8px;
 }
 article svg {
-  height: 1.1em;
-  margin-bottom: -4px;
+  height: 1em;
+  width: 1em;
   fill: var(--destaque);
 }
 article h2 {
@@ -195,10 +196,9 @@ article h2 {
   color: var(--texto);
 }
 #formacao-conteiner .instituicao {
-  color: var(--destaque-inverso);
+  color: var(--destaque);
   font-size: 1.1em;
 }
-#formacao-conteiner .titulacao {}
 
 
  @media screen and (min-width: 768px) {
