@@ -8,6 +8,14 @@
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
 }
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333111;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
+}
 *    {
   margin: 0;
   padding: 0;
@@ -25,6 +33,9 @@ header  {
   padding: 10px;
   display: flex;
   place-content: end end;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #menu ul  {
@@ -32,7 +43,7 @@ header  {
   display: flex;
   gap: 10px;
 }
-/* #menu a {
+#menu a {
   color: var(--texto-inverso);
   text-decoration: none;
   font-weight: 600;
@@ -43,13 +54,17 @@ header  {
 #menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
-} */
+}
 #menu svg {
   height: 1.6em;
   width: 1.6em;
   fill: var(--texto-inverso);
   transition: fill 0.5s;
 }
+#menu a:visited {
+  fill: none;
+}
+
 #menu svg:hover, svg:visited {
   fill: var(--destaque-inverso);
 }
@@ -254,8 +269,19 @@ footer a:hover {
   color-scheme: var(--destaque-inverso);
 }
 
-
  @media screen and (min-width: 768px) {
+  main  {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
   #skill-conteiner {
     grid-template-columns: 1fr 1fr;
   }
